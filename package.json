@@ -1,0 +1,23 @@
+{
+    "name": "backup",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "exports": "./dist/index.js",
+    "engines": {
+        "node": ">=18"
+    },
+    "scripts": {
+        "start": "ts-node src/index.ts"
+    },
+    "dependencies": {
+        "command-exists": "^1.2.9"
+    },
+    "devDependencies": {
+        "@types/command-exists": "^1.2.0",
+        "@types/node": "^20.1.4",
+        "dotenv": "16.0.3",
+        "ts-node": "^10.9.1",
+        "typescript": "5.0.4"
+    }
+}
