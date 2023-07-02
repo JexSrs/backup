@@ -9,6 +9,7 @@ const MYSQL_HOST = process.env.MYSQL_HOST!;
 const MYSQL_USERNAME = process.env.MYSQL_USERNAME!;
 const MYSQL_PASSWORD = process.env.MYSQL_PASSWORD!;
 
+
 await BackupScript.run([
     new MongoBackupScript({
         scriptId: 'raspberry',
@@ -28,5 +29,5 @@ await BackupScript.run([
         username: MYSQL_USERNAME,
         password: MYSQL_PASSWORD,
         database: 'keycloak'
-    }),
+    })
 ]);
